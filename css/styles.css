@@ -64,3 +64,39 @@ pre {
     word-wrap: break-word;
     text-align: justify;
   }
+
+img {
+max-width: 100%;
+max-height: 50vh;
+height: auto;
+}
+
+.parent {
+position: relative;
+top: 0;
+left: 0;
+}
+.image1 {
+position: relative;
+top: 0;
+left: 0;
+border: 3px black solid;
+}
+.image2 {
+position: absolute;
+top: 390px;
+left: 300px;
+border: 3px black solid;
+}
+.image3 {
+position: absolute;
+top: 900px;
+left: 300px;
+border: 3px black solid;
+}
+.image4 {
+position: absolute;
+top: 500px;
+left: 20px;
+border: 3px black solid;
+}

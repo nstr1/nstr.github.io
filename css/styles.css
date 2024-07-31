@@ -23,4 +23,21 @@ body {
     margin-bottom: 20px;
 }
 
+#songs {
+    list-style-type: none; /* Remove list dots */
+    padding: 0; /* Remove default padding */
+}
+
+#songs li {
+    margin: 10px 0; /* Space out list items */
+}
+
+a {
+    color: #4a90e2; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
 

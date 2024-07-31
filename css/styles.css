@@ -41,3 +41,15 @@ a:hover {
     text-decoration: underline; /* Add underline on hover */
 }
 
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #tab {
+        width: 100%; /* Make tab section fit the width */
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    }
+}

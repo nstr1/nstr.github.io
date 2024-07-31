@@ -53,3 +53,9 @@ a:hover {
         overflow-x: auto; /* Allow horizontal scrolling if necessary */
     }
 }
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }

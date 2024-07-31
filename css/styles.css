@@ -28,6 +28,11 @@ body {
     padding: 0; /* Remove default padding */
 }
 
+#bikes {
+    list-style-type: none; /* Remove list dots */
+    padding: 0; /* Remove default padding */
+}
+
 #songs li {
     margin: 10px 0; /* Space out list items */
 }

@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.tab {
+    margin-bottom: 20px;
+}

@@ -5,7 +5,8 @@ body, html {
     background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    cursor: url("../cursor.png"), auto;
 }
 
 body {
@@ -13,9 +14,10 @@ body {
 }
 
 .container {
-    position: top;
-    text-align: left;
-    background-color: #fff;
+    width: 40vw;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
     padding: 20px;
 }
 
@@ -24,38 +26,39 @@ body {
 }
 
 #songs {
-    list-style-type: none; /* Remove list dots */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 #bikes {
-    list-style-type: none; /* Remove list dots */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 #songs li {
-    margin: 10px 0; /* Space out list items */
+    margin: 10px 0;
 }
 
 a {
-    color: #4a90e2; /* Link color */
-    text-decoration: none; /* Remove underline from links */
+    color: #4a90e2;
+    text-decoration: none;
+    cursor: url("../sip.png"), auto;
 }
 
 a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .container {
-        width: 95%; /* Adjust width for smaller screens */
-        padding: 15px; /* Adjust padding for smaller screens */
+        width: 95%;
+        padding: 15px;
     }
 
     #tab {
-        width: 100%; /* Make tab section fit the width */
-        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        width: 100%;
+        overflow-x: auto;
     }
 }
 
@@ -66,37 +69,21 @@ pre {
   }
 
 img {
-max-width: 100%;
-max-height: 50vh;
-height: auto;
+    max-width: 30vw;
+    max-height: 50vh;
+    height: auto;
+    border: 3px black solid;
 }
 
-.parent {
-position: relative;
-top: 0;
-left: 0;
-}
-.image1 {
-position: relative;
-top: 0;
-left: 0;
-border: 3px black solid;
-}
-.image2 {
-position: absolute;
-top: 390px;
-left: 300px;
-border: 3px black solid;
-}
-.image3 {
-position: absolute;
-top: 900px;
-left: 300px;
-border: 3px black solid;
-}
-.image4 {
-position: absolute;
-top: 500px;
-left: 20px;
-border: 3px black solid;
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #tab {
+        width: 100%;
+        overflow-x: auto;
+    }
 }

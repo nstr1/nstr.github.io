@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: left;
-    cursor: url("../cursor.png"), auto;
+    cursor: url("../cursor/cursor.png"), auto;
 }
 
 body {
@@ -14,10 +14,9 @@ body {
 }
 
 .container {
-    width: 40vw;
-    max-width: 800px;
+    width: 800px;
     margin: 20px auto;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
@@ -42,7 +41,7 @@ body {
 a {
     color: #4a90e2;
     text-decoration: none;
-    cursor: url("../sip.png"), auto;
+    cursor: url("../cursor/sip.png"), auto;
 }
 
 a:hover {

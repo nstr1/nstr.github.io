@@ -7,7 +7,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: left;
-    /* zoom: 120%; */
     cursor: url("cursor/cursor.png"), auto;
 }
 
@@ -50,35 +49,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    #tab {
-        width: 100%;
-        overflow-x: auto;
-    }
-}
-
 img {
     max-width: 30vw;
-    max-height: 50vh;
-    height: auto;
+    max-height: 30vh;
     border: 3px black solid;
 }
 
-
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-
-    #tab {
-        width: 100%;
-        overflow-x: auto;
-    }
+.image-container {
+    max-width: 90vw;         
 }

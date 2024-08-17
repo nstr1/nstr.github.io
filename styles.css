@@ -75,7 +75,6 @@ img.wide-image {
     grid-column: span 2 / auto;
 }
 
-
 @media (min-resolution: 2dppx) {
     img {
         border-width: 0.1875rem; 

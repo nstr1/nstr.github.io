@@ -81,7 +81,7 @@ img.wide-image {
     }
 }
 
-/* Responsive design for images */
+
 @media (max-width: 600px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -91,6 +91,24 @@ img.wide-image {
         grid-column: span 2 / auto;
         grid-row: span 1 / auto;
     }
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-item a {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    font-size: 12px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%; 
+    margin-bottom: 16px; 
 }
 
 .breadcrumb {

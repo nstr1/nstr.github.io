@@ -1,8 +1,8 @@
 import os
 import urllib.parse
 
-image_folder = "../pages/album-images"
-output_file = "../pages/albums.html"
+image_folder = "pages/album-images"
+output_file = "pages/albums.html"
 youtube_music_search_url = "https://music.youtube.com/search?q="
 
 html_content = """<!DOCTYPE html>

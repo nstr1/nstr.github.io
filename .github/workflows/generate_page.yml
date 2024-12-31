@@ -1,9 +1,9 @@
-name: generate albums page
+name: Generate Albums Page
 
 on:
   push:
     branches:
-      - main  # Adjust to the branch used for GitHub Pages
+      - main
 
 jobs:
   generate-page:
@@ -28,7 +28,7 @@ jobs:
 
     - name: Generate album page
       run: |
-        python scripts/generate_albums_page.py
+        python scripts/generate_album_page.py
 
     - name: Commit and push changes
       run: |

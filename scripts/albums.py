@@ -1,8 +1,8 @@
 import os
 import urllib.parse
 
-image_folder = "pages/album-images"
-output_file = "pages/albums.html"
+image_folder = "../pages/album-images"
+output_file = "../pages/albums.html"
 youtube_music_search_url = "https://music.youtube.com/search?q="
 
 html_content = """<!DOCTYPE html>
@@ -30,16 +30,17 @@ html_content = """<!DOCTYPE html>
 
 for image_file in sorted(os.listdir(image_folder)):
     if image_file.endswith(('.jpg', '.png', '.jpeg', '.gif')):
+        album_info = os.path.splitext(image_file)[0].replace("-", " ").replace("_", " ").split(" ")
+        album_title = " ".join(album_info[:-1]).lower()
+        artist_name = album_info[-1].lower()
 
-        album_info = os.path.splitext(image_file)[0].replace("-", " ")
-        print(album_info)
-
-        query = f"{album_info}"
+        query = f"{album_title} {artist_name}"
         link_url = youtube_music_search_url + urllib.parse.quote(query)
+
         html_content += f"""
             <div class="gallery-item">
-                <img src="{image_folder}/{image_file}" class="album-art">
-                <a href="{link_url}" target="_blank">album_info</a>
+                <img src="album-images/{image_file}" class="album-art">
+                <a href="{link_url}" target="_blank">{album_title} {artist_name}</a>
             </div>
         """
 

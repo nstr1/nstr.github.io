@@ -28,7 +28,7 @@ jobs:
 
     - name: Generate album page
       run: |
-        python scripts/generate_album_page.py
+        python scripts/generate_albums_page.py
 
     - name: Commit and push changes
       run: |

@@ -1,4 +1,4 @@
-name: Generate Albums Page
+name: generate albums page
 
 on:
   push:

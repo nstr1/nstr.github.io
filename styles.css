@@ -83,7 +83,7 @@ img.wide-image {
 
 @media (max-width: 600px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     
     img.four-grid-cells, img.wide-image, img.album-art {

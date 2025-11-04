@@ -143,3 +143,23 @@ img.wide-image {
         font-size: 14px;
     }
 }
+
+/* TOC: indent nested lists so children of H2 sections appear indented */
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.toc ul ul {
+    margin-left: 1.25rem; /* indent nested TOC entries */
+}
+
+/* Content: indent articles that are children of H2 sections (visual grouping) */
+main section > article {
+    margin-left: 1.25rem;
+}
+
+/* Small tweak: slightly smaller font for nested TOC items to improve hierarchy */
+.toc ul ul li a {
+    font-size: 0.95em;
+}

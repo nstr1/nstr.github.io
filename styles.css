@@ -163,3 +163,26 @@ main section > article {
 .toc ul ul li a {
     font-size: 0.95em;
 }
+
+/* Stronger overrides for GitHub Pages: increase specificity so rules aren't accidentally overridden */
+.container .toc ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+.container .toc ul ul {
+    margin-left: 1.25rem !important; /* force indent when other rules interfere */
+}
+.toc-symbol {
+    color: #666;
+    margin-right: 0.35rem;
+    font-weight: 600;
+}
+.container main section > article {
+    margin-left: 1.25rem !important;
+}
+
+/* Optional: make anchor-only region easier to click while keeping symbols non-clickable */
+.toc a {
+    padding-left: 0.15rem;
+}
